@@ -1,5 +1,9 @@
-package chrome.ext
+package do.not.use.chrome.ext
 
+/**
+ * TODO: This is just for reference, not used because it is generated from a prototype TS => Kotlin generator that doesn't quite get it close to correct
+ *       But signatures and field names are mostly right.  But sometimes things need to be classes, sometimes not native at all, etc.
+ */
 public native object chrome {
     public native object app {
         public native object runtime {

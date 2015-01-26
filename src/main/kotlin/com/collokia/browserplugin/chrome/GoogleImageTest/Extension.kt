@@ -4,6 +4,7 @@ import kotlin.js.dom.html.document
 import kotlin.js.dom.html.HTMLDocument
 import kotlin.js.dom.html.HTMLImageElement
 
+// This is a port of this sample: https://developer.chrome.com/extensions/getstarted
 
 native fun encodeURIComponent(str: String): String = noImpl
 
@@ -29,7 +30,7 @@ public native object chrome {
             public var incognito: Boolean
         }
 
-        public native fun query(queryInfo: Any, callback: (result: Array<Tab>) -> Unit): Unit = noImpl
+        public fun query(queryInfo: Any, callback: (result: Array<Tab>) -> Unit): Unit = noImpl
     }
 }
 
